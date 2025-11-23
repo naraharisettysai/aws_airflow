@@ -1,0 +1,203 @@
+[2025-11-01T12:50:11.712+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-01T12:50:11.733+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: submit_pyspark_job_to_emr.add_step manual__2025-11-01T12:50:04.191700+00:00 [queued]>
+[2025-11-01T12:50:11.742+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: submit_pyspark_job_to_emr.add_step manual__2025-11-01T12:50:04.191700+00:00 [queued]>
+[2025-11-01T12:50:11.743+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-11-01T12:50:11.759+0000] {taskinstance.py:2889} INFO - Executing <Task(EmrAddStepsOperator): add_step> on 2025-11-01 12:50:04.191700+00:00
+[2025-11-01T12:50:11.775+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=176) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-01T12:50:11.777+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'submit_pyspark_job_to_emr', 'add_step', 'manual__2025-11-01T12:50:04.191700+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/***_to_emr.py', '--cfg-path', '/tmp/tmpcm0ea3m1']
+[2025-11-01T12:50:11.779+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask add_step
+[2025-11-01T12:50:11.779+0000] {standard_task_runner.py:72} INFO - Started process 180 to run task
+[2025-11-01T12:50:11.861+0000] {task_command.py:467} INFO - Running <TaskInstance: submit_pyspark_job_to_emr.add_step manual__2025-11-01T12:50:04.191700+00:00 [running]> on host fb2512168ded
+[2025-11-01T12:50:11.969+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='submit_pyspark_job_to_emr' AIRFLOW_CTX_TASK_ID='add_step' AIRFLOW_CTX_EXECUTION_DATE='2025-11-01T12:50:04.191700+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-01T12:50:04.191700+00:00'
+[2025-11-01T12:50:11.971+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-11-01T12:50:11.972+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-11-01T12:50:11.973+0000] {logging_mixin.py:190} INFO - Current task name:add_step state:running start_date:2025-11-01 12:50:11.734475+00:00
+[2025-11-01T12:50:11.973+0000] {logging_mixin.py:190} INFO - Dag name:submit_pyspark_job_to_emr and current dag run status:running
+[2025-11-01T12:50:11.974+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-01T12:50:12.003+0000] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2025-11-01T12:50:12.004+0000] {connection_wrapper.py:325} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2025-11-01T12:50:12.955+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/operators/emr.py", line 153, in execute
+    region_name=emr_hook.conn_region_name,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 766, in conn_region_name
+    return self.conn_client_meta.region_name
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 761, in conn_client_meta
+    return self._client.meta
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 753, in _client
+    conn = self.conn
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 740, in conn
+    return self.get_client_type(region_name=self.region_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 710, in get_client_type
+    return session.client(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/session.py", line 297, in client
+    return self._session.create_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/session.py", line 997, in create_client
+    client = client_creator.create_client(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 165, in create_client
+    client_args = self._get_client_args(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 524, in _get_client_args
+    return args_creator.get_client_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 101, in get_client_args
+    final_args = self.compute_client_args(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 220, in compute_client_args
+    endpoint_config = self._compute_endpoint_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 373, in _compute_endpoint_config
+    return self._resolve_endpoint(**resolve_endpoint_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 478, in _resolve_endpoint
+    return endpoint_bridge.resolve(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 629, in resolve
+    resolved = self.endpoint_resolver.construct_endpoint(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/regions.py", line 230, in construct_endpoint
+    result = self._endpoint_for_partition(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/regions.py", line 278, in _endpoint_for_partition
+    raise NoRegionError()
+botocore.exceptions.NoRegionError: You must specify a region.
+[2025-11-01T12:50:12.966+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-11-01T12:50:12.967+0000] {logging_mixin.py:190} INFO - Task start:2025-11-01 12:50:11.734475+00:00 end:2025-11-01 12:50:12.966445+00:00 duration:1.23197
+[2025-11-01T12:50:12.968+0000] {logging_mixin.py:190} INFO - Task:<Task(EmrAddStepsOperator): add_step> dag:<DAG: submit_pyspark_job_to_emr> dagrun:<DagRun submit_pyspark_job_to_emr @ 2025-11-01 12:50:04.191700+00:00: manual__2025-11-01T12:50:04.191700+00:00, state:running, queued_at: 2025-11-01 12:50:04.421974+00:00. externally triggered: True>
+[2025-11-01T12:50:12.969+0000] {logging_mixin.py:190} INFO - Failure caused by You must specify a region.
+[2025-11-01T12:50:12.970+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=submit_pyspark_job_to_emr, task_id=add_step, run_id=manual__2025-11-01T12:50:04.191700+00:00, execution_date=20251101T125004, start_date=20251101T125011, end_date=20251101T125012
+[2025-11-01T12:50:12.986+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-01T12:50:12.987+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 3 for task add_step (You must specify a region.; 180)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/operators/emr.py", line 153, in execute
+    region_name=emr_hook.conn_region_name,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 766, in conn_region_name
+    return self.conn_client_meta.region_name
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 761, in conn_client_meta
+    return self._client.meta
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 753, in _client
+    conn = self.conn
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 740, in conn
+    return self.get_client_type(region_name=self.region_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 710, in get_client_type
+    return session.client(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/session.py", line 297, in client
+    return self._session.create_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/session.py", line 997, in create_client
+    client = client_creator.create_client(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 165, in create_client
+    client_args = self._get_client_args(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 524, in _get_client_args
+    return args_creator.get_client_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 101, in get_client_args
+    final_args = self.compute_client_args(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 220, in compute_client_args
+    endpoint_config = self._compute_endpoint_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 373, in _compute_endpoint_config
+    return self._resolve_endpoint(**resolve_endpoint_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/args.py", line 478, in _resolve_endpoint
+    return endpoint_bridge.resolve(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 629, in resolve
+    resolved = self.endpoint_resolver.construct_endpoint(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/regions.py", line 230, in construct_endpoint
+    result = self._endpoint_for_partition(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/regions.py", line 278, in _endpoint_for_partition
+    raise NoRegionError()
+botocore.exceptions.NoRegionError: You must specify a region.
+[2025-11-01T12:50:13.041+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-11-01T12:50:13.067+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-01T12:50:13.073+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

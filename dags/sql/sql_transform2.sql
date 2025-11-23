@@ -1,0 +1,1 @@
+SELECT VendorID,trip_distance,pickup_longitude,"PART2" as file_name FROM {{params.project_id}}.{{params.dataset_table}} 

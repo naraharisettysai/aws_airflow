@@ -1,0 +1,127 @@
+[2025-11-01T12:48:32.448+0000] {processor.py:186} INFO - Started process (PID=795) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:48:32.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:48:32.454+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.453+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:48:32.494+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:48:32.615+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.614+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.629+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.628+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.638+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.637+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.648+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.648+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.658+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.658+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.666+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.666+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.674+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.674+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.676+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.675+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:48:32.691+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.691+0000] {dag.py:3262} INFO - Creating ORM DAG for submit_pyspark_job_to_emr
+[2025-11-01T12:48:32.703+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:48:32.702+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-10-31 00:00:00+00:00, run_after=2025-11-01 00:00:00+00:00
+[2025-11-01T12:48:32.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.287 seconds
+[2025-11-01T12:49:03.509+0000] {processor.py:186} INFO - Started process (PID=866) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:03.510+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:49:03.514+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:03.513+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:03.543+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:03.572+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:03.571+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:49:03.597+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:03.597+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-10-31 00:00:00+00:00, run_after=2025-11-01 00:00:00+00:00
+[2025-11-01T12:49:03.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.119 seconds
+[2025-11-01T12:49:34.054+0000] {processor.py:186} INFO - Started process (PID=938) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:34.056+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:49:34.060+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:34.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:34.089+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:49:34.115+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:34.115+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:49:34.141+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:49:34.141+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-10-31 00:00:00+00:00, run_after=2025-11-01 00:00:00+00:00
+[2025-11-01T12:49:34.169+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.122 seconds
+[2025-11-01T12:50:04.917+0000] {processor.py:186} INFO - Started process (PID=1013) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:04.919+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:50:04.924+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:04.923+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:04.965+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:05.000+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:05.000+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:50:05.036+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:05.035+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:50:05.062+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.158 seconds
+[2025-11-01T12:50:35.718+0000] {processor.py:186} INFO - Started process (PID=1084) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:35.720+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:50:35.724+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:35.724+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:35.756+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:50:35.787+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:35.787+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:50:35.818+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:50:35.818+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:50:35.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.134 seconds
+[2025-11-01T12:51:06.221+0000] {processor.py:186} INFO - Started process (PID=1155) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:06.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:51:06.229+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:06.228+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:06.281+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:06.321+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:06.320+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:51:06.366+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:06.365+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:51:06.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.189 seconds
+[2025-11-01T12:51:36.829+0000] {processor.py:186} INFO - Started process (PID=1226) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:36.831+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:51:36.837+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:36.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:36.876+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:51:36.909+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:36.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:51:36.939+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:51:36.938+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:51:36.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.142 seconds
+[2025-11-01T12:52:07.123+0000] {processor.py:186} INFO - Started process (PID=1297) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:07.124+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:52:07.128+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:07.127+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:07.158+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:07.184+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:07.183+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:52:07.210+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:07.210+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:52:07.237+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.122 seconds
+[2025-11-01T12:52:37.330+0000] {processor.py:186} INFO - Started process (PID=1368) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:37.333+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:52:37.336+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:37.336+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:37.361+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:52:37.385+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:37.384+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:52:37.413+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:52:37.412+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:52:37.436+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.113 seconds
+[2025-11-01T12:53:07.588+0000] {processor.py:186} INFO - Started process (PID=1439) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:07.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:53:07.593+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:07.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:07.620+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:07.645+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:07.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:53:07.671+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:07.671+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:53:07.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.112 seconds
+[2025-11-01T12:53:38.211+0000] {processor.py:186} INFO - Started process (PID=1510) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:38.214+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:53:38.217+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:38.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:38.253+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:53:38.279+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:38.279+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:53:38.305+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:53:38.305+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:53:38.329+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.126 seconds
+[2025-11-01T12:54:08.739+0000] {processor.py:186} INFO - Started process (PID=1582) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:08.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:54:08.745+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:08.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:08.780+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:08.808+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:08.808+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:54:08.836+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:08.835+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:54:08.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.134 seconds
+[2025-11-01T12:54:39.289+0000] {processor.py:186} INFO - Started process (PID=1653) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:39.290+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:54:39.295+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:39.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:39.325+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:54:39.350+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:39.349+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:54:39.375+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:54:39.375+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:54:39.401+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.118 seconds
+[2025-11-01T12:55:09.620+0000] {processor.py:186} INFO - Started process (PID=1724) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:09.622+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:55:09.626+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:09.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:09.654+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:09.679+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:09.679+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:55:09.704+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:09.703+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:55:09.726+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.113 seconds
+[2025-11-01T12:55:39.974+0000] {processor.py:186} INFO - Started process (PID=1795) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:39.976+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:55:39.982+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:39.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:40.019+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:55:40.048+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:40.048+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:55:40.080+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:55:40.080+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:55:40.104+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.139 seconds
+[2025-11-01T12:56:10.215+0000] {processor.py:186} INFO - Started process (PID=1866) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:10.217+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:56:10.221+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:10.220+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:10.258+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:10.285+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:10.284+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:56:10.310+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:10.310+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:56:10.333+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.125 seconds
+[2025-11-01T12:56:40.741+0000] {processor.py:186} INFO - Started process (PID=1937) to work on /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:40.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_to_emr.py for tasks to queue
+[2025-11-01T12:56:40.748+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:40.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:40.781+0000] {processor.py:925} INFO - DAG(s) 'submit_pyspark_job_to_emr' retrieved from /opt/airflow/dags/airflow_to_emr.py
+[2025-11-01T12:56:40.825+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:40.824+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-01T12:56:40.857+0000] {logging_mixin.py:190} INFO - [2025-11-01T12:56:40.856+0000] {dag.py:4180} INFO - Setting next_dagrun for submit_pyspark_job_to_emr to 2025-11-01 00:00:00+00:00, run_after=2025-11-02 00:00:00+00:00
+[2025-11-01T12:56:40.884+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_to_emr.py took 0.151 seconds

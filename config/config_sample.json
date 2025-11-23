@@ -1,0 +1,26 @@
+{
+	"landing_bucket" : "files_dataflow",
+	"destination_table_stg" : "spark_load.uber_data_fin",
+	"filename":[
+	{
+		"file_name": "uber_data_1_filesensor"
+		
+	},
+	{
+		"file_name":"uber_data_2_filesensor"
+	}
+	
+	],
+	"tranformations" : [
+	{
+		"sql":"sql_transform1.sql",
+		"destination_table": "spark_load.sink1",
+		"source" :"spark_load.uber_data_fin"
+	},
+	{
+		"sql":"sql_transform2.sql",
+		"destination_table": "spark_load.sink2",
+		"source" :"spark_load.uber_data_fin"
+	}
+	]
+}
