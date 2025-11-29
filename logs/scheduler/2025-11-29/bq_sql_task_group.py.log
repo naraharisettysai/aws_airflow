@@ -1,0 +1,777 @@
+[2025-11-29T11:18:56.903+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:18:56.905+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:18:56.910+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:18:56.910+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:18:56.963+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:18:56.954+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:18:56.966+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:18:56.982+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.089 seconds
+[2025-11-29T11:19:27.184+0000] {processor.py:186} INFO - Started process (PID=164) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:27.186+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:19:27.189+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:19:27.189+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:27.232+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:19:27.225+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:19:27.235+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:27.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.071 seconds
+[2025-11-29T11:19:57.367+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:57.369+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:19:57.373+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:19:57.372+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:57.419+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:19:57.412+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:19:57.422+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:19:57.437+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.082 seconds
+[2025-11-29T11:20:28.255+0000] {processor.py:186} INFO - Started process (PID=301) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:28.257+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:20:28.262+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:20:28.261+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:28.313+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:20:28.302+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:20:28.316+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:28.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.089 seconds
+[2025-11-29T11:20:58.583+0000] {processor.py:186} INFO - Started process (PID=370) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:58.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:20:58.589+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:20:58.588+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:58.636+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:20:58.628+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:20:58.639+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:20:58.656+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.081 seconds
+[2025-11-29T11:21:28.802+0000] {processor.py:186} INFO - Started process (PID=438) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:28.803+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:21:28.807+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:21:28.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:28.850+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:21:28.843+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:21:28.852+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:28.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.073 seconds
+[2025-11-29T11:21:59.121+0000] {processor.py:186} INFO - Started process (PID=507) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:59.123+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:21:59.127+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:21:59.127+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:59.172+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:21:59.166+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:21:59.174+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:21:59.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.076 seconds
+[2025-11-29T11:22:29.749+0000] {processor.py:186} INFO - Started process (PID=576) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:22:29.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:22:29.756+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:22:29.755+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:22:29.802+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:22:29.796+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:22:29.804+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:22:29.817+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.076 seconds
+[2025-11-29T11:23:00.466+0000] {processor.py:186} INFO - Started process (PID=644) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:00.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:23:00.472+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:23:00.472+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:00.525+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:23:00.518+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:23:00.528+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:00.540+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.087 seconds
+[2025-11-29T11:23:31.145+0000] {processor.py:186} INFO - Started process (PID=712) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:31.147+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:23:31.151+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:23:31.150+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:31.195+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:23:31.188+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:23:31.198+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:23:31.210+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.073 seconds
+[2025-11-29T11:24:01.823+0000] {processor.py:186} INFO - Started process (PID=781) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:01.825+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:24:01.827+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:24:01.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:01.877+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:24:01.871+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:24:01.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:01.893+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.078 seconds
+[2025-11-29T11:24:32.583+0000] {processor.py:186} INFO - Started process (PID=849) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:32.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:24:32.586+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:24:32.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:32.636+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:24:32.628+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:24:32.639+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:24:32.651+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.076 seconds
+[2025-11-29T11:25:02.873+0000] {processor.py:186} INFO - Started process (PID=917) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:02.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:25:02.876+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:25:02.876+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:02.922+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:25:02.915+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:25:02.925+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:02.938+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.072 seconds
+[2025-11-29T11:25:33.394+0000] {processor.py:186} INFO - Started process (PID=985) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:33.395+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:25:33.397+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:25:33.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:33.446+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:25:33.438+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:25:33.451+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:25:33.464+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.080 seconds
+[2025-11-29T11:26:03.571+0000] {processor.py:186} INFO - Started process (PID=1054) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:03.572+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:26:03.574+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:26:03.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:03.620+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:26:03.612+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:26:03.623+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:03.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.074 seconds
+[2025-11-29T11:26:33.770+0000] {processor.py:186} INFO - Started process (PID=1122) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:33.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:26:33.774+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:26:33.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:33.825+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:26:33.817+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:26:33.828+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:26:33.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.082 seconds
+[2025-11-29T11:27:04.185+0000] {processor.py:186} INFO - Started process (PID=1190) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:04.187+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:27:04.189+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:27:04.189+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:04.236+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:27:04.229+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:27:04.239+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:04.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.074 seconds
+[2025-11-29T11:27:34.886+0000] {processor.py:186} INFO - Started process (PID=1258) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:34.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:27:34.889+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:27:34.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:34.939+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:27:34.930+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:27:34.941+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:27:34.953+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.077 seconds
+[2025-11-29T11:28:06.154+0000] {processor.py:186} INFO - Started process (PID=1326) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:06.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:28:06.158+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:28:06.157+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:06.210+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:28:06.204+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:28:06.213+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:06.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.085 seconds
+[2025-11-29T11:28:36.741+0000] {processor.py:186} INFO - Started process (PID=1395) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:36.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:28:36.744+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:28:36.743+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:36.789+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:28:36.782+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:28:36.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:28:36.804+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.071 seconds
+[2025-11-29T11:29:07.681+0000] {processor.py:186} INFO - Started process (PID=1463) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:07.682+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:29:07.684+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:29:07.684+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:07.728+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:29:07.720+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:29:07.731+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:07.743+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.070 seconds
+[2025-11-29T11:29:37.906+0000] {processor.py:186} INFO - Started process (PID=1533) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:37.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:29:37.909+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:29:37.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:37.956+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:29:37.949+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:29:37.958+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:29:37.971+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.073 seconds
+[2025-11-29T11:30:08.310+0000] {processor.py:186} INFO - Started process (PID=1601) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:08.312+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:30:08.315+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:30:08.314+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:08.367+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:30:08.361+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:30:08.369+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:08.382+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.084 seconds
+[2025-11-29T11:30:38.680+0000] {processor.py:186} INFO - Started process (PID=1670) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:38.682+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:30:38.684+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:30:38.683+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:38.739+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:30:38.731+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:30:38.742+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:30:38.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.085 seconds
+[2025-11-29T11:31:09.369+0000] {processor.py:186} INFO - Started process (PID=1738) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:09.370+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:31:09.372+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:31:09.371+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:09.419+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:31:09.411+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:31:09.421+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:09.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.072 seconds
+[2025-11-29T11:31:39.853+0000] {processor.py:186} INFO - Started process (PID=1806) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:39.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:31:39.857+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:31:39.856+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:39.904+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:31:39.898+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:31:39.907+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:31:39.920+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.075 seconds
+[2025-11-29T11:32:10.107+0000] {processor.py:186} INFO - Started process (PID=1874) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:10.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:32:10.110+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:32:10.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:10.157+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:32:10.149+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:32:10.159+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:10.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.073 seconds
+[2025-11-29T11:32:41.155+0000] {processor.py:186} INFO - Started process (PID=1943) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:41.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:32:41.159+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:32:41.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:41.213+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:32:41.205+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:32:41.215+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:32:41.242+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.096 seconds
+[2025-11-29T11:33:11.713+0000] {processor.py:186} INFO - Started process (PID=2011) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:11.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:33:11.716+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:33:11.715+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:11.774+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:33:11.766+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:33:11.777+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:11.791+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.087 seconds
+[2025-11-29T11:33:42.128+0000] {processor.py:186} INFO - Started process (PID=2079) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:42.130+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:33:42.132+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:33:42.131+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:42.187+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:33:42.179+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:33:42.190+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:33:42.205+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.085 seconds
+[2025-11-29T11:34:12.489+0000] {processor.py:186} INFO - Started process (PID=2147) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:12.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:34:12.492+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:34:12.492+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:12.538+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:34:12.532+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:34:12.541+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:12.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.072 seconds
+[2025-11-29T11:34:42.966+0000] {processor.py:186} INFO - Started process (PID=2215) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:42.968+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:34:42.970+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:34:42.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:43.039+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:34:43.023+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:34:43.042+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:34:43.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.100 seconds
+[2025-11-29T11:35:13.853+0000] {processor.py:186} INFO - Started process (PID=2283) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:13.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:35:13.857+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:35:13.856+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:13.902+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:35:13.895+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:35:13.905+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:13.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.074 seconds
+[2025-11-29T11:35:44.142+0000] {processor.py:186} INFO - Started process (PID=2352) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:44.144+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:35:44.145+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:35:44.145+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:44.188+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:35:44.181+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:35:44.191+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:35:44.202+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.068 seconds
+[2025-11-29T11:36:14.965+0000] {processor.py:186} INFO - Started process (PID=2422) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:14.966+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:36:14.968+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:36:14.967+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:15.010+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:36:15.003+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:36:15.013+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:15.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.068 seconds
+[2025-11-29T11:36:45.723+0000] {processor.py:186} INFO - Started process (PID=2490) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:45.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:36:45.726+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:36:45.726+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:45.775+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:36:45.768+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:36:45.778+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:36:45.791+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.076 seconds
+[2025-11-29T11:37:16.522+0000] {processor.py:186} INFO - Started process (PID=2558) to work on /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:37:16.523+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/bq_sql_task_group.py for tasks to queue
+[2025-11-29T11:37:16.525+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:37:16.524+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:37:16.569+0000] {logging_mixin.py:190} INFO - [2025-11-29T11:37:16.561+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/bq_sql_task_group.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 92, in <module>
+    dag_seq()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/bq_sql_task_group.py", line 31, in dag_seq
+    dag_config = Variable.get("config_sample", deserialize_json=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable config_sample does not exist'
+[2025-11-29T11:37:16.572+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/bq_sql_task_group.py
+[2025-11-29T11:37:16.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/bq_sql_task_group.py took 0.070 seconds

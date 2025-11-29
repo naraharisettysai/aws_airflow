@@ -8,6 +8,7 @@ from airflow.models import Variable
 from datetime import datetime, timedelta
 import boto3, time
 from airflow.utils.dates import days_ago
+from airflow.providers.amazon.aws.hooks.base_aws import AwsBaseHook
 
 default_args = {
     'owner': 'airflow',
@@ -22,8 +23,9 @@ default_args = {
 }
 def create_emr_cluster():
     # Create an EMR cluster using Boto3
-
-    emr_client = boto3.client('emr', region_name='eu-north-1')
+    # hook = AwsBaseHook(aws_conn_id="my_aws_conn_id",region_name='eu-north-1',client_type="emr")
+    # emr_client = hook.get_client_type("emr")
+    emr_client = boto3.client('emr', region_name='eu-north-1') #uses this when direclt using in aws airflow
 
     # Specify the configurations for your EMR cluster
     cluster_config = {
@@ -88,6 +90,8 @@ def create_emr_cluster():
     return str(cluster_id)
     
 def check_step_status(cluster_id, step_id):
+    #hook = AwsBaseHook(aws_conn_id="my_aws_conn_id",region_name='eu-north-1',client_type="emr")
+    #emr_client = hook.get_client_type("emr")
     emr_client = boto3.client('emr', region_name='eu-north-1')  # Replace 'your_region' with your AWS region
     while True:
         response = emr_client.describe_step(ClusterId=cluster_id, StepId=step_id)
@@ -107,6 +111,8 @@ def run_spark_job(**kwargs):
     print("job_flow_id {}".format(job_flow_id))
 
     # Describe the cluster
+    # hook = AwsBaseHook(aws_conn_id="my_aws_conn_id",region_name='eu-north-1',client_type="emr")
+    # emr_client = hook.get_client_type("emr")
     emr_client = boto3.client('emr', region_name='eu-north-1')
     response = emr_client.describe_cluster(ClusterId=job_flow_id)
 
@@ -143,6 +149,8 @@ def terminate_emr_cluster(**kwargs):
     # Terminate a EMR cluster
     job_flow_id = kwargs['ti'].xcom_pull(task_ids='create_emr_cluster')
     # Terminate the EMR cluster using Boto3
+    # hook = AwsBaseHook(aws_conn_id="my_aws_conn_id",region_name='eu-north-1',client_type="emr")
+    #emr_client = hook.get_client_type("emr")
     emr_client = boto3.client('emr', region_name='eu-north-1')
     emr_client.terminate_job_flows(JobFlowIds=[job_flow_id])
     
